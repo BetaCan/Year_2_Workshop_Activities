@@ -1,4 +1,4 @@
-package week_1_task_2.task_2;
+package week_1.Ex2_p2_Silver_Gold;
 
 public class Maths
 {	  	  	  	       		   	      	
