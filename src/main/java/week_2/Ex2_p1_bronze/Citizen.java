@@ -13,7 +13,7 @@ public class Citizen
     {
         this.givenName = givenName;
         this.familyName=familyName;
-        this.age=setAge(age);
+        setAge(age);
     }
 
     public String getGivenName() {
@@ -36,14 +36,14 @@ public class Citizen
         return age;
     }
 
-    public int setAge(int age) {
-        if (this.age<0)
+    public void setAge(int age) {
+        if (age<0)
         {
-            return this.age = 18;
+            this.age = 18;
         }
         else
         {
-            return this.age = age;
+            this.age = age;
         }
     }
 
@@ -53,6 +53,9 @@ public class Citizen
 
     }
     public int getTaxableYears(){
-        return 0;
+
+            return Math.max(age-18,0);
+
+
     }
 }
