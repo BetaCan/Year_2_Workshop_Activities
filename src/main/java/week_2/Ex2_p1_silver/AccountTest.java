@@ -1,4 +1,4 @@
-package week_2.Ex2_p1_gold;
+package week_2.Ex2_p1_silver;
 
 public class AccountTest {
 
