@@ -17,6 +17,7 @@ public class Account {
     public void withdraw(double howMuch){
         if(balance-howMuch<0){
             //balance= balance-howMuch;
+
             System.out.println("Error - insufficient funds");
 
 
@@ -31,6 +32,11 @@ public class Account {
     public void deposit(double howMuch){
 
          balance=howMuch+ balance;
+
+    }
+
+    public void setBalance (double bal){
+        balance = bal;
 
     }
 
