@@ -1,4 +1,4 @@
-package week_3.Ex1_p1_bronze;
+package week_3.Ex1_p1_gold;
 
 public class Customer {
 

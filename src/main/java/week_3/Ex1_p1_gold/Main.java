@@ -1,4 +1,4 @@
-package week_3.Ex1_p1_bronze;
+package week_3.Ex1_p1_gold;
 
 public class Main
 {
@@ -12,7 +12,7 @@ public class Main
         System.out.println(fred.getAddressLine(2)); // should be Southwark Park Road
         System.out.println(fred.getAddressLine(3)); // should be Bermondsey
         System.out.println(fred.getAddressLine(4)); // should be SE16 1JP
-        
+
 
         Customer queenie = new Customer("The Queen","Buckingham Palace, England");
         System.out.println(queenie.getFamilyName()); // should be Queen
