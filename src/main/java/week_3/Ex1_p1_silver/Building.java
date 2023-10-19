@@ -4,13 +4,35 @@ public class Building {
     private int streetNumber;
     private String streetName;
     private String postCode;
-    private int ownerName;
+    private String ownerName;
+
+    double totalFloorSpace;
+
+    private Room[] rooms;
 
 
+    public Building (int streetNumber, String streetName, String postCode, String ownerName, Room[] rooms)
+    {
+        this.streetName = streetName;
+        this.streetNumber=streetNumber;
+        this.postCode=postCode;
+        this.ownerName=ownerName;
+        this.rooms=rooms;
+    }
 
-    public double getTotalFloorSpace(Room length, Room width ){
-        int i = length * width;
-        return i;
+    public Building()
+    {
+
+    }
+
+    public double getTotalFloorSpace(){
+
+        for (int i=0; rooms.length> i;i++)
+        {
+            totalFloorSpace  = totalFloorSpace +rooms[i].getLength() *rooms[i].getWidth();
+
+        }
+        return totalFloorSpace;
     }
 
 
@@ -38,11 +60,19 @@ public class Building {
         this.postCode = postCode;
     }
 
-    public int getOwnerName() {
+    public String getOwnerName() {
         return ownerName;
     }
 
-    public void setOwnerName(int ownerName) {
+    public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
+    }
+
+    public Room[] getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(Room[] rooms) {
+        this.rooms = rooms;
     }
 }

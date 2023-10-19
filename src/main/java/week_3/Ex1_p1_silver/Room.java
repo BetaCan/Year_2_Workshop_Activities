@@ -1,9 +1,21 @@
 package week_3.Ex1_p1_silver;
 
-public class Room extends Building{
+public class Room {
     private int level;
     private double width;
     private double length;
+
+
+    public Room(int level, double width,double length){
+        this.length=length;
+        this.width=width;
+        this.level=level;
+
+    }
+
+    public Room(){
+
+    }
 
     public int getLevel() {
         return level;
