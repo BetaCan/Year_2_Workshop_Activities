@@ -9,7 +9,7 @@ public class Phone {
     private String uniqueID;
     private int manufacturingCost;
 
-    ArrayList<String> phones = new ArrayList<String>();
+    private static ArrayList<Phone> phones = new ArrayList<Phone>();
 
 
     public Phone(){
@@ -25,16 +25,16 @@ public class Phone {
         this.manufacturingCost=manufacturingCost;
     }
 
-    /*public int getCostOfRun(int ManufacturingCost){
+    public int getCostOfRun(int ManufacturingCost){
          //total cost of all devices
 
         for (int i=0; i<phones.size() ;i++)
         {
-            ;s
+            //Phone.getManufacturingCost(i);
         }
 
         return 0;
-    }*/
+    }
 
    // public getCurrentRun(){}
 
