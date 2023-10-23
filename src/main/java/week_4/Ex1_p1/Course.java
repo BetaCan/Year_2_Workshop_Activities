@@ -5,8 +5,28 @@ public class Course {
     private String department;
     private int durationInYears;
 
-
+    private Module[] modules;
     private Lecturer lecturer;
+
+    private Student[] students;
+
+    public Student[] getStudents() {
+        return students;
+    }
+
+    public void setStudents(Student[] students) {
+        this.students = students;
+    }
+
+    public Module[] getModules() {
+        return modules;
+    }
+
+    public void setModules(Module[] modules) {
+        this.modules = modules;
+    }
+
+
 
     public Lecturer getLecturer() {
         return lecturer;
