@@ -5,6 +5,17 @@ public class Course {
     private String department;
     private int durationInYears;
 
+
+    private Lecturer lecturer;
+
+    public Lecturer getLecturer() {
+        return lecturer;
+    }
+
+    public void setLecturer(Lecturer lecturer) {
+        this.lecturer = lecturer;
+    }
+
     public String getName() {
         return name;
     }

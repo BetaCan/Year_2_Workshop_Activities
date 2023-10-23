@@ -6,6 +6,15 @@ public class Module {
     private String dayOfWeek;
     private String time;
 
+    private Lecturer lecturer;
+
+    public Lecturer getLecturer() {
+        return lecturer;
+    }
+
+    public void setLecturer(Lecturer lecturer) {
+        this.lecturer = lecturer;
+    }
 
     public String getName() {
         return name;

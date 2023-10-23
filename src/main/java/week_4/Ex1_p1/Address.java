@@ -7,6 +7,8 @@ public class Address {
     private String postcode;
     private String country;
 
+
+
     public int getStreetNumber() {
         return streetNumber;
     }
