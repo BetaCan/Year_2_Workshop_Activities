@@ -65,11 +65,13 @@ public class Drawer {
       return false;	  	  	  	       		   	      	
     }
     */
+
     // created a nested loop where
     // one loop goes through the first sock
     // and the other through the second pair
     // this makes it so everytime the loop is completed
-    // two socks will combine to create a single pair of socks.
+    // two socks will combine to create a single pair of socks
+    // using the sock class we can pull the method isPair
     for (int i = 0; i < socks.size(); i++) {
       for (int j = i + 1; j < socks.size(); j++) {
         if (socks.get(i).isPair(socks.get(j))) {
