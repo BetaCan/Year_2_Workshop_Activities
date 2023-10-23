@@ -13,7 +13,7 @@ public class Drawer
     if (sockno == 2) return secondsock;	  	  	  	       		   	      	
     if (sockno == 3) return thirdsock;	  	  	  	       		   	      	
     // otherwise	  	  	  	       		   	      	
-    return null;	  	  	  	       		   	      	
+    return null;
   }	  	  	  	       		   	      	
 	  	  	  	       		   	      	
   public void addSock(Sock newsock)	  	  	  	       		   	      	
