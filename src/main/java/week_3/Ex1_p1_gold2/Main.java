@@ -8,7 +8,7 @@ public class Main
 
     public static void main(String[] args)
     {
-       /* // start a production run
+        // start a production run
         Phone.startNewRun();
 
         // create new phones
@@ -28,7 +28,7 @@ public class Main
             System.out.println(phone);
         }
 
-        */
+
 
         // Should print out
         // Apple iPhone X (767S62A21) @ 600

@@ -23,22 +23,32 @@ public class Phone {
         this.model=model;
         this.uniqueID=uniqueID;
         this.manufacturingCost=manufacturingCost;
+        phones.add(this);
     }
 
-    public int getCostOfRun(int ManufacturingCost){
+    public static int getCostOfRun(){
          //total cost of all devices
-
-        for (int i=0; i<phones.size() ;i++)
-        {
-            //Phone.getManufacturingCost(i);
+        int total=0;
+        for (Phone phone:phones){
+            total = total+ phone.manufacturingCost;
         }
+        return total;
 
-        return 0;
     }
 
-   // public getCurrentRun(){}
+    public static ArrayList<Phone>getCurrentRun(){
+        return phones;
+    }
 
-    //public startNewRun(){}
+    public static void startNewRun(){
+        phones.clear();
+    }
+
+@Override
+public String toString(){
+        return String.format("%s %s %s (%s) @ %s", brand, type,model,uniqueID,manufacturingCost);
+}
+
 
     public String getBrand() {
         return brand;
