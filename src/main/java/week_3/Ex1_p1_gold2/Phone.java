@@ -46,6 +46,11 @@ public class Phone {
 
 @Override
 public String toString(){
+        //he %s is a format specifier in Java that is used within
+        // the String.format method. It is used to indicate a
+        // placeholder for a string. When the String.format
+        // method is called, the %s is replaced with the actual
+        // string value provided as an argument.
         return String.format("%s %s %s (%s) @ %s", brand, type,model,uniqueID,manufacturingCost);
 }
 
