@@ -1,6 +1,6 @@
 package week_4.Ex1_p1;
 
-public class Lecturer extends Person {
+public class Lecturer extends Person { // arrow with no colour
     private String employeeNumber;
     private String NInumber; // Capitalisation
     private String jobTitle;

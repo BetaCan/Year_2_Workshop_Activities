@@ -1,6 +1,6 @@
 package week_4.Ex1_p1;
 
-public class Student extends Person{
+public class Student extends Person{ // arrow with no colour
     private String studentNumber;
     private boolean marketing;
 

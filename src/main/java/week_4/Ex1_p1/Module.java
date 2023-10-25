@@ -6,7 +6,7 @@ public class Module {
     private String dayOfWeek;
     private String time;
 
-    private Lecturer lecturer;
+    private Lecturer lecturer; // normal arrow
 
     public Lecturer getLecturer() {
         return lecturer;
