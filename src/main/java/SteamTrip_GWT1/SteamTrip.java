@@ -7,6 +7,36 @@ public class SteamTrip {
 
     private int seatsBooked;
 
+    public SteamTrip(){
+        this.tripName="Unknown";
+        this.seats=0;
+        this.seatsBooked=0;
+
+    }
+
+    public SteamTrip(String tripName,int seats){
+        this.tripName=tripName;
+        this.seats=seats;
+        this.seatsBooked=0;
+
+    }
+
+    public void bookSeat(){
+
+        if (seatsAvailable()){
+        this.seatsBooked+= 1;}
+    }
+
+    public boolean seatsAvailable(){
+        if (seats>seatsBooked)
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     public String getTripName() {
         return tripName;
     }
@@ -20,14 +50,27 @@ public class SteamTrip {
     }
 
     public void setSeats(int seats) {
+
         this.seats = seats;
     }
 
     public int getSeatsBooked() {
-        return seatsBooked;
+
+       // return seatsBooked;
+
+
+        if (seatsAvailable()){
+
+            return seatsBooked;}
+        else {
+            return 0;
+        }
     }
 
     public void setSeatsBooked(int seatsBooked) {
         this.seatsBooked = seatsBooked;
+
+
+
     }
 }
