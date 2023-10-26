@@ -1,4 +1,4 @@
-package GatewayTest1;
+package SteamTrip_GWT1;
 
 public class SteamTrip {
     private String tripName;
