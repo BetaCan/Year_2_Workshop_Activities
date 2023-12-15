@@ -7,7 +7,8 @@ public class Challenge
     {
         // implement your code here
 
-
-        return null;
+        Integer[] num = new Integer[list.size()];
+        num = list.toArray(num);
+        return num;
     }
 }

@@ -5,7 +5,6 @@ import java.util.HashSet;
 
 public class Challenge
 {
-
     public static boolean hasPair(String[] list)
     {
         // implement your code here
